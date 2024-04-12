@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP CSS -->
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- INTEGRAÇÃO DOS ÍCONES-->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    
+    <!-- CSS -->
+    
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Weather App Api</title>
+</head>
+<body>
+
+
+    <section id="background-image" class="vh-100">
+        <div class="container py-5 h-100">
+      
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-8 col-lg-6 col-xl-4">
+                
+              <div class="card" style="color: #4B515D; border-radius: 35px; background-color: cyan;">
+                <div class="p-5">
+                    <h3 class="mb-4 pb-2 fw-normal">Check the weather forecast</h3>
+    
+                    <div class="input-group rounded mb-3">
+                    <input id="input" type="search" class="form-control rounded" placeholder="City" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <a id="submit" href="#!" type="button">
+                        <span class="input-group-text border-0 fw-bold" id="search-addon">
+                        Check!
+                        </span>
+                    </a>
+                    <div style="display: none;" id="error" class="pt-5">
+                        <h5>Não foi possível encontrar essa cidade!</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="card-body px-5 pb-5">
+      
+                  <div class="d-flex">
+                    <h6 id="city_name" class="flex-grow-1">Warsaw</h6>
+                    <h6>15:07</h6>
+                  </div>
+                    <div class="text-center">
+                        <img id="weather-icon" src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                        width="100px">
+                    </div>
+                  <div class="d-flex flex-column text-center mt-2 mb-4">
+                    <h6 id="temp" class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> 13°C </h6>
+                    <span id="state_weather" class="small" style="color: #868B94">Stormy</span>
+                  </div>
+      
+                  <div class="d-flex align-items-center">
+                    <div class="flex-grow-1" style="font-size: 1rem;">
+                      <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span id="vento" class="ms-1"> 40 km/h
+                        </span></div>
+                      <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span id="humidade" class="ms-1"> 84% </span>
+                      </div>
+                      <div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span id="direcao" class="ms-1"> 1000 hPa </span>
+                      </div>
+                    </div>
+                    <div>
+                        <img id="country"></img>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+      </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/Js.js"></script>
+
+</body>
+</html>
